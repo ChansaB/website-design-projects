@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<link rel="stylesheet" href="pacific.css">
+	<!--[if lt IE 9]> 
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> 
+	</script> 
+	<![endif]-->
+	<meta charset="utf-8">
+	<meta name="viewport content ="width= device-width, initial-scale = 1.0"
+	<title>Pacific Trails Resort :: Reservations by Chansa Bwalya</title>
+</head>
+
+<body>
+
+	<!--****************Wrapper****************-->
+<div id = "wrapper">
+	<!--****************header****************-->
+	
+	<header>
+		<h1>Pacific Trails Resort</h1>
+	</header>
+	
+	<!--****************navigation****************-->
+	
+	<nav>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<a href="yurts.html"><li>Yurts</li></a>
+			<a href="activities.html"><li>Activities</li></a>
+			<a href="reservations.html"><li>Reservations</li></a>
+		</ul>
+	</nav>
+	
+	<!--****************main content****************-->
+	<main>
+		<h2>Reservations at Pacific Trails </h2>
+		<h3> Contact Us </h3>
+		<p>Required information is marked with an asterisk (*)</p>
+		<form method="post" action ="http://webdevbasics.net/scripts/pacific.php" id = "myReservations" name = "myReservations">
+			*First Name: <input type="text" id="myFName" accesskey="F" tabindex="1" required>
+			*Last Name: <input type="text" id="myLName" accesskey="L" tabindex="2" required>
+			*Email: <input type="email" id="myEmail" accesskey="E" tabindex="3" required>
+			Phone: <input type="tel" id="myPhone" accesskey="P" tabindex="4">
+			*Arrival: <input type="date" id="myArrival" accesskey="A" tabindex="5" required>
+			*Nights: <input type="number" id="myNights" min="1" max="14" accesskey="N" tabindex="6" required>
+			Comments: <input type="textarea" id="myComments" accesskey="C" rows="2" cols="20" tabindex="7">
+			<input type="submit" id="mySubmit" accesskey="S" tabindex="8" class="printHidden" value="submit Form" label = "not included">
+			<input type="reset" id="myReset" accesskey="R" tabindex="9" class="printHidden" value="Clear Form" label="not included">
+		</form>
+			
+	</main>
+	<!--****************footer****************-->
+	<footer>
+	<div id="navBottom">
+		<br>
+		<a href="index.html">Home&nbsp;</a>
+		<a href="yurts.html">Yurts&nbsp;<a>
+		<a href="activities.html">Activities&nbsp;</a>
+		<a href="reservations.html">Reservations&nbsp;</a> <br>
+			Copyright &copy; 2015 Pacific Trails Resort <br>
+			<a href="mailto:chansa.bwalya@my.occc.edu">chansa.bwalya@my.occc.edu</a>
+	</div>
+	</footer>
+</div>
+</body>
+</html>

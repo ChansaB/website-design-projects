@@ -1,0 +1,210 @@
+/* --------------------------
+	Project Name: Pacific 03
+	Author: Chansa Bwalya
+	Version: 1.0
+	Last Changed:4/4/2022
+	
+	Colors: White (background, text): #ffffff
+			Gray (text, shadow): #666666
+			Dark blue (background, text): #000033
+			Medium blue(text): #3399cc
+			Sky blue(background):#90c7e3
+	
+	Typography:
+			body: "Verdana, Arial, sans-serif"
+			header: line-height -200%, "Georgia, "Times New Roman", sans-serif"
+			h1: line-height- 200%
+			nav: bold
+			dt: bold
+			resort: 1.2em
+			footer: .70em, italic, center
+			wrapper: center, 80%
+			
+--------------------------*/
+/* ----------------entire web page----------------*/
+body	{	background-color: #ffffff;
+			background-image: url(images/background.jpg);
+			color: #666666;
+			font-family: Verdana, Arial, sans-serif; }
+.clear { overflow: auto; }
+header, nav, main, footer	{display: block;}
+/*-------------------headings---------------------*/
+header  {	background-color: #000033;
+			color: #ffffff;
+			line-height: 200%;
+			font-family: Georgia, "Times New Roman", sans-serif; }
+
+h1		{	line-height: 200%;
+			background-image: url(images/sunset.jpg);
+			background-position: right;
+			background-repeat: no-repeat;
+			padding-left: 20px;
+			height: 72px;
+			margin-bottom:0;}
+h2		{	color: #3399cc; }
+h3		{	color: #000033; }
+/*---------------------nav-------------------------*/
+nav 	{	font-weight: bold;
+			padding:5px;
+			float: left;
+			width: 160px;
+			padding:20px 5px 0px 5px;}
+nav a	{text-decoration:none;
+		 display: block;
+		 text-align:center;
+		 padding:5px;
+		 border: 2px outset #CCC;
+		 background-color:#000033;
+		 color: #FFF; }  
+		
+nav ul  {list-style-type: none;
+		 margin:0;
+		 padding-left:0;
+		}
+nav a:visited {background-color:#90c7e3;}
+nav a:hover {background-color:#39c;
+			 border:2px inset #666;}
+/*---------------------main--------------------*/
+dt		{	color: #000033;
+			font-weight: bold;}
+.resort	{	color: #000033;
+			font-size: 1.2em; }
+main	{	padding-left: 20px;
+			padding-right: 20px; 
+			background-color:#fff;
+			margin-left:170px;
+			padding: 1px 20px 1px 20px;
+			text-align:left;
+		}
+#mobile {display:none;}
+#desktop {display:inline;}
+main img, main video, main embed {float:left;
+		  padding-right: 0px 20px 20px 0px;}
+main ul	{list-style-position: inside;}
+.diaplayImage {display:none;}	
+.displayVideo {display:block;}		
+
+
+/*--------------------footer-------------------*/
+footer	{	font-size: .70em;
+			font-style: italic;
+			text-align: center; 
+			padding:10px;
+			background-color: #ffffff;
+			margin-left:170px;
+			clear: both;
+			}
+/*-----------wrapper-----------*/			
+#wrapper	{	text-align: center;
+				width: 80%;
+				background-color: #FFFFF;
+				min-width: 700px;
+				max-width:1024px;
+				box-shadow: 3px;
+				color:#90C7E3;}
+				
+
+/* ---------------------------- Forms -------------------------- */
+label {float:left; display:block; width:10em; padding:1em; text-align: right; }
+input {display:block; margin-bottom:1em;}
+textarea {display:block; margin-bottom:1em;}
+.mySubmit {margin-left:10em; display:inline;}
+.myReset {margin-left:0.5em; display: inline;}
+
+/* ------------------ Media -------------------------*/
+
+
+
+/* ********************************************************************
+                          Tablet Media Query
+******************************************************************** */
+
+@media only screen and (max-width:1024px){
+	body {margin:0; padding: 0; background-image: none;}
+	#wrapper {width: auto; min-width: 0; margin: 0; box-shadow: none;}
+	h1 {margin:0;}
+	nav {float: none; width: auto; padding: 0.5em;}
+	nav li {display: inline-block;}
+	nav a {padding:1em;}
+	main {padding:1em; margin-left: 0; font-size:90%; text-align:left;}
+	footer {margin-left:0; }
+	navBottom {display:none;}
+	.myReset{margin-left:2em; display:block;}
+	.mySubmit{margin-left:2em; display:block;}
+	label {clear: both; margin-left:2em; margin-top:0.1em; text-align: left;}
+	input {clear: both; margin-left:2em; margin-top:0.1em; text-align: left;}
+	textarea {clear: both; margin-left:2em; margin-top:0.1em; text-align: left;}
+}				
+
+/* ********************************************************************
+                          Smartphone Media Query
+******************************************************************** */
+
+@media only screen and (max-width:768px){
+	h1 {height:100%; font-size:1.5em; padding-left:0.3em;}
+	nav {padding:0;}
+	footer {margin-left:0;}
+	nav a {display: block; padding:0.2em; font-size:1.3em; border-bottom:1px; color:#300;}
+	nav ul {margin:0; padding:0;}
+	nav li {display: block; margin:0; padding:0; font-size:0.85em;}
+	main {padding-top:0.1em; padding-bottom:0.1em; padding-left:0.4em; padding-right:0;}
+	main img {display:none; padding-right:0;}
+	main ul{list-style-position: outside;}
+	footer {padding:0;}
+	navBottom {display: none;}
+	#mobile {display:inline;}
+	#desktop {display:none;}
+	#desktopGallery{display:none;}
+    #mobileGallery{display:block;}
+	#gallery a:hover span {display:none;}
+	#gallery img{display:block;}
+}
+
+/* ********************************************************************
+                          Print Media Query
+******************************************************************** */
+
+@media print{
+	body { background-image:none;}
+	h1 {margin-top:0; margin-bottom:0;}
+	nav {display:none;}
+	footer {margin-left:0;}
+	main {width: 90%; padding-left:10px; padding-right: 10px; padding-top:1px; padding-bottom:1px; margin-right:10px; margin-left:10px;}
+	a {text-decoration: none; color:#000;}
+	aside a:after { content: " (" attr(href) ") ";}
+	wrapper {background-color:#FFF; min-width:0; width:95%; box-shadow:none; border: solid; border-color:#000;}
+	navBottom {display:none;}
+	footer {margin-left:0;}
+	.printHidden {visibility:hidden;}
+	.diaplayImage {display:block;}	
+	.displayVideo {display:none;}
+	#gallery ul {width:425px;}
+	#gallery a:after {content:attr(title);}
+	#gallery ul a img{ float:left; }
+	#desktopGallery{display:none;}
+	#mobileGallery{display:none;}
+}
+
+
+/* ------------------ Table -------------------------*/
+
+table {margin:center; border-style:solid; border:1px; border-color:#39c; width:90%; border-collapse:collapse;}
+th {padding:5px; border:1px; border-style:solid; border-color:#39c;}
+td {padding:5px; border:1px; border-style:solid; border-color:#39c;text-align:center;}
+.text {text-align:left;}
+tr:nth-of-type {background-color:#F5FAFC;}
+
+/* ------------------ Gallery -------------------------*/
+#gallery {position:relative; height:260px; clear:both;}
+#gallery ul {width:300px; list-style-type:none;}
+#gallery li{display:inline-block;
+              padding:5px 10px;}
+#gallery img {border-style:none;
+                float:none;}
+#gallery a{text-decoration:none;
+           color:#333;
+           font-style:italic;}
+#gallery span {display:none;}
+#gallery a:hover span {display:block; position:absolute; top:10px; left:340px; text-align:center;}
+#desktopGallery{display:block;}
+#mobileGallery{display:none;}
